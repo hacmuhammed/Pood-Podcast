@@ -1,0 +1,369 @@
+.pood__pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.pood__pricing-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.pood__pricing-discount p{
+  font-family: var(--font-family);
+  font-weight: light;
+  color: var(--color-gray);
+  font-size: 1rem;
+}
+.pood__pricing-title h1 {
+  font-family: var(--font-family);
+  color: #000;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.pood__pricing-title p {
+  font-family: var(--font-family);
+  color: var(--color-gray);
+  font-size: 1.4rem;
+}
+.pood__pricing-plan__toggle{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pood__pricing-plan {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pood__pricing-plan p {
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+.pood__pricing-cards {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blurBlodBg{
+  position: absolute; 
+  left: 50%;
+  z-index: -100;
+  width: 20%;
+  height: 20%;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  filter: blur(100px);
+}
+.pood__pricing-card__one {
+  width: 28rem;
+  height: 32rem;
+  background: #fff;
+  border: 2px solid var(--color-primary);
+  border-radius: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -2px 1px 8px rgba(0, 0, 0, 0.2);
+}
+.pood__pricing-card__one-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pood__pricing-card__one-title button {
+  font-family: var(--font-family);
+  width: 6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 3rem;
+  text-align: center;
+}
+.pood__pricing-card__one-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 1.5rem;
+}
+.pood__pricing-card__one-price h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 3rem;
+  transition: all 0.2s ease-in;
+}
+.pood__pricing-card__one-price p {
+  font-family: var(--font-family);
+  font-weight: light;
+  font-size: 0.8rem;
+  color: var(--color-gray);
+  max-width: 20rem;
+}
+.pood__pricing-divider {
+  height: 1px;
+  width: 75%;
+  background: var(--color-gray);
+}
+.pood__pricing-card__one-features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.pood__pricing-card__one-features__info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pood__pricing-card__one-features__info img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.pood__pricing-card__one-features__info p {
+  font-family: var(--font-family);
+  color: var(--color-gray);
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.pood__pricing-card__one-footer {
+  width: 100%;
+  text-align: center;
+}
+.pood__pricing-card__one-footer button {
+  width: 100%;
+  height: 3rem;
+  background: var(--color-primary);
+  border-radius: 6rem;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*  =========== */
+
+.pood__pricing-card__two {
+  width: 28rem;
+  height: 32rem;
+  border: 2px solid var(--color-secondary);
+  border-radius: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: -2px 1px 8px rgba(0, 0, 0, 0.2);
+  background-image: url("/src/assets/goldenCard.png");
+  background-size: cover;
+}
+.pood__pricing-card__two-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pood__pricing-card__two-title button {
+  font-family: var(--font-family);
+  width: 6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 1.5rem;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  border-radius: 3rem;
+  text-align: center;
+}
+.pood__pricing-card__two-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 1.5rem;
+}
+.pood__pricing-card__two-price h1 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--color-secondary);
+}
+.pood__pricing-card__two-price p {
+  font-family: var(--font-family);
+  font-weight: light;
+  font-size: 0.8rem;
+  color: var(--color-gray);
+  max-width: 20rem;
+}
+.pood__pricing-card__two-features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.pood__pricing-card__two-features__info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pood__pricing-card__two-features__info img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.pood__pricing-card__two-features__info p {
+  font-family: var(--font-family);
+  color: var(--color-secondary);
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.pood__pricing-card__two-footer {
+  width: 100%;
+  text-align: center;
+}
+.pood__pricing-card__two-footer button {
+  width: 100%;
+  height: 3rem;
+  background: var(--gradient-text);
+  border-radius: 6rem;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/* ========== */
+
+.pood__pricing-card__three {
+  width: 28rem;
+  height: 32rem;
+  background: #fff;
+  border-radius: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -2px 1px 8px rgba(0, 0, 0, 0.2);
+}
+.pood__pricing-card__three-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pood__pricing-card__three-title button {
+  font-family: var(--font-family);
+  width: 6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 3rem;
+  text-align: center;
+}
+.pood__pricing-card__three-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 1.5rem;
+}
+.pood__pricing-card__three-price h1 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+.pood__pricing-card__three-price p {
+  font-family: var(--font-family);
+  font-weight: light;
+  font-size: 0.8rem;
+  color: var(--color-gray);
+  max-width: 20rem;
+}
+.pood__pricing-card__three-features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.pood__pricing-card__three-features__info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pood__pricing-card__three-features__info img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.pood__pricing-card__three-features__info p {
+  font-family: var(--font-family);
+  color: var(--color-secondary);
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.pood__pricing-card__three-footer {
+  width: 100%;
+  text-align: center;
+}
+.pood__pricing-card__three-footer button {
+  width: 100%;
+  height: 3rem;
+  background: var(--color-secondary);
+  border-radius: 6rem;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.pood__pricing-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top:2rem;
+  opacity: 50%;
+}
+
+.pood__pricing-footer img {
+  width: 0.9rem;
+  height: 1.125rem;
+}
+.pood__pricing-footer p {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: light;
+  color: var(--color-gray);
+}

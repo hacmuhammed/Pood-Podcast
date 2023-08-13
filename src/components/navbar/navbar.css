@@ -1,0 +1,148 @@
+.pood__navbar-container {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem 1rem;
+  transition: all 0.1s;
+}
+/* this class will be added if we activate scroll handler */
+/* .scrolled{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 2rem 6rem 2rem;
+} */
+.pood__navbar-elements {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.pood__navbar-links__container {
+  display: flex;
+  justify-self: start;
+  width: 100%;
+}
+.pood__navbar-logo {
+  margin-right: 6rem;
+}
+.pood__navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.pood__navbar-links p {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+
+.pood__navbar-logo img {
+  width: 8rem;
+}
+
+.pood__navbar-sign button {
+  border: solid 0.1rem var(--color-secondary);
+  padding: 0.6rem 1.8rem;
+  background: transparent;
+  border-radius: 3.125rem;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.pood__navbar-menu {
+  margin-left: 1rem;
+  position: relative;
+  display: none;
+}
+.pood__navbar-menu svg {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.pood__navbar-menu_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+  background: var(--color-secondary);
+  padding: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  z-index: 15;
+}
+.pood__navbar-menu_container p {
+  margin: 1rem 0;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  color: #fff;
+}
+.pood__navbar-menu_container button{
+  border: solid 0.1rem #fff;
+  min-width: 200px;
+  padding: 0.6rem rem;
+  background: transparent;
+  border-radius: 3.125rem;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  font-family: var(--font-family);
+  cursor: pointer;
+
+}
+.pood__navbar-menu_container-links{
+  width: 100%;
+}
+.pood__navbar-menu_container-links-sign {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .pood__navbar-links {
+    gap: 1rem;
+  }
+  .pood__navbar-logo {
+    margin-right: 3rem;
+  }
+  .pood__navbar-container {
+    padding: 2rem 4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pood__navbar-links {
+    display: none;
+  }
+  .pood__navbar-menu {
+    display: flex;
+  }
+  .pood__navbar-elements {
+    justify-content: flex-end;
+  }
+  .pood__navbar-menu_container-links-sign {
+    display: block;
+  }
+  .pood__navbar-sign{
+    display: none;
+  }
+}

@@ -1,0 +1,116 @@
+.pood__card {
+  border-radius: 1.3rem;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+.pood__card:hover {
+  transform: scale(1.05);
+  box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+}
+
+.pood__card-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pood__card-title img {
+  width: 49px;
+}
+.pood__card-title__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+.pood__card-title__info h1 {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: #fff;
+}
+.pood__card-title__info p {
+  font-family: var(--font-family);
+  color: #fff;
+  font-size: 0.75rem;
+}
+.pood__card-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.pood__card-footer img {
+  width: 4rem;
+}
+.pood__card-footer__info {
+  color: #fff;
+}
+.pood__card-footer__info h1 {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 800;
+}
+.pood__card-footer__info p {
+  font-family: var(--font-family);
+  font-size: 0.8rem;
+  font-weight: light;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .pood__card-footer__info h1 {
+        font-size: 1.5rem;
+      }
+      .pood__card-title img {
+        width: 45px;
+      }
+      .pood__card-title__info h1 {
+        font-size: 1rem;
+      }
+      .pood__card-title__info p {
+        font-size: 0.7rem;
+      }
+}
+
+@media screen and (max-width: 1024px) {
+  .pood__card-footer__info h1 {
+    font-size: 1rem;
+  }
+  .pood__card-title img {
+    width: 40px;
+  }
+  .pood__card-title__info h1 {
+    font-size: 0.8rem;
+  }
+  .pood__card-title__info p {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width:768px){
+    .pood__card {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 200px ;
+      }
+      .pood__card-title{
+        width: 40%;
+      }
+      .pood__card-title img {
+        width: 50px;
+      }
+      .pood__card-title__info h1 {
+        font-size: 1rem;
+      }
+      .pood__card-title__info p {
+        font-size: 0.7rem;
+      }
+      .pood__card-footer{
+        width: 40%;
+
+        justify-content: flex-start;
+      }
+}

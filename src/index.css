@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root{
+    --font-family :  'DM Sans', sans-serif;
+    --gradient-text : linear-gradient(90deg, #FFAD0E 0%, #FF7F0A 100%);
+    --gradient-bg : linear-gradient(90deg, #FFAD0E 0%, #FF7F0A 100%);
+    --color-primary:#000000;
+    --color-secondary : #FFAD0E;
+    --color-gray :#878787;
+
+
+}
