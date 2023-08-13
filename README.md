@@ -1,3 +1,8 @@
+(Pood) is a platform that brings together all the international music platforms in one place, the project is currently under development and is expected to be completed in the next half year.
+You can view the main interface by visiting the following link :
+https://pood-podcast.netlify.app
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
